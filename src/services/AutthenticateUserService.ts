@@ -4,7 +4,7 @@ import { compare } from "bcryptjs"
 
 import { sign } from "jsonwebtoken"
 
-import { UserRepositories } from "../repositories/UserRepositories"
+import { UsersRepositories } from "../repositories/UsersRepositories"
 
 interface IAuthenticateRequest {
   email: string
@@ -13,7 +13,7 @@ interface IAuthenticateRequest {
 
 class AuthenticateUserSerfvice {
   async execute ({ email, password }: IAuthenticateRequest) {
-    const userRepositories = getCustomRepository(UserRepositories)
+    const userRepositories = getCustomRepository(UsersRepositories)
     if (!email){
       throw new Error("Email incorrect")
     }
