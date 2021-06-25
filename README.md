@@ -1,7 +1,7 @@
 # NLW Valoriza
 
 ## Regras
- - Cadastro de usuário
+- Cadastro de usuário
   - [ x ] Não é permitido cadastrar mais de um usuário com o mesmo email
   - [ x ] Não é permitido cadastrar usuário sem e-mail
 
